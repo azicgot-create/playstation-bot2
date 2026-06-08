@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: playstation-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8988961578:AAFzT8ppMspnzzVDvGuJSyYhiScq2_c5B7I
